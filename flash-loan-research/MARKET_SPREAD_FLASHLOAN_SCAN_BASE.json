@@ -1,0 +1,121 @@
+{
+  "timestamp": "2026-06-23T06:36:32Z",
+  "network": "base",
+  "contract": null,
+  "scanner": "market_spread",
+  "candidates_found": 3,
+  "results": [
+    {
+      "network": "base",
+      "borrow": "USDC",
+      "mid": "WETH",
+      "amount": 2678070800,
+      "amount_human": 2678.07,
+      "routerA": {
+        "name": "0x03C01Acae3D0173a93d819efDc832C7C4F153B06",
+        "address": "0x7877B97C887DD3A3a1CEa35822DA07e11a25e7da",
+        "url": "https://dexscreener.com/base/0x7877b97c887dd3a3a1cea35822da07e11a25e7da",
+        "role": "buy_low_pool"
+      },
+      "routerB": {
+        "name": "aerodrome",
+        "address": "0x56AeaF4af2DF4bdFD9D865830Fefdd278b25E7Ef",
+        "url": "https://dexscreener.com/base/0x56aeaf4af2df4bdfd9d865830fefdd278b25e7ef",
+        "role": "sell_high_pool"
+      },
+      "mid_out": null,
+      "final_out": null,
+      "premium": 1.3390354000000002,
+      "gross_profit_token": 41.666601,
+      "gas_usd": 0.001,
+      "net_profit_usd": 40.326566,
+      "spread_bps": 155.58,
+      "low_price_usd": 1683.84,
+      "high_price_usd": 1710.1,
+      "liquidity_usd_low_pool": 386927.13,
+      "liquidity_usd_high_pool": 133903.54,
+      "volume_24h_usd_low_pool": 51603.91,
+      "volume_24h_usd_high_pool": 43968.99,
+      "simulation_ok": false,
+      "simulation_message": "Market-data research signal only; requires route quote and eth_call simulation before execution.",
+      "research_source": "dexscreener token-pairs"
+    },
+    {
+      "network": "base",
+      "borrow": "USDC",
+      "mid": "AERO",
+      "amount": 4636304000,
+      "amount_human": 4636.3,
+      "routerA": {
+        "name": "aerodrome",
+        "address": "0xa4FDd479eda160671636e2eCF8f993Cbf86258a8",
+        "url": "https://dexscreener.com/base/0xa4fdd479eda160671636e2ecf8f993cbf86258a8",
+        "role": "buy_low_pool"
+      },
+      "routerB": {
+        "name": "aerodrome",
+        "address": "0x2223F9FE624F69Da4D8256A7bCc9104FBA7F8f75",
+        "url": "https://dexscreener.com/base/0x2223f9fe624f69da4d8256a7bcc9104fba7f8f75",
+        "role": "sell_high_pool"
+      },
+      "mid_out": null,
+      "final_out": null,
+      "premium": 2.318152,
+      "gross_profit_token": 26.203677,
+      "gas_usd": 0.001,
+      "net_profit_usd": 23.884525,
+      "spread_bps": 56.52,
+      "low_price_usd": 0.5304,
+      "high_price_usd": 0.5334,
+      "liquidity_usd_low_pool": 594969.99,
+      "liquidity_usd_high_pool": 231815.2,
+      "volume_24h_usd_low_pool": 2158210.78,
+      "volume_24h_usd_high_pool": 18392.09,
+      "simulation_ok": false,
+      "simulation_message": "Market-data research signal only; requires route quote and eth_call simulation before execution.",
+      "research_source": "dexscreener token-pairs"
+    },
+    {
+      "network": "base",
+      "borrow": "USDC",
+      "mid": "cbBTC",
+      "amount": 10000000000,
+      "amount_human": 10000,
+      "routerA": {
+        "name": "uniswap",
+        "address": "0xeC558e484cC9f2210714E345298fdc53B253c27D",
+        "url": "https://dexscreener.com/base/0xec558e484cc9f2210714e345298fdc53b253c27d",
+        "role": "buy_low_pool"
+      },
+      "routerB": {
+        "name": "aerodrome",
+        "address": "0x3e66e55e97ce60096f74b7C475e8249f2D31a9fb",
+        "url": "https://dexscreener.com/base/0x3e66e55e97ce60096f74b7c475e8249f2d31a9fb",
+        "role": "sell_high_pool"
+      },
+      "mid_out": null,
+      "final_out": null,
+      "premium": 5.0,
+      "gross_profit_token": 24.644326,
+      "gas_usd": 0.001,
+      "net_profit_usd": 19.643326,
+      "spread_bps": 24.64,
+      "low_price_usd": 62701.93,
+      "high_price_usd": 62856.81,
+      "liquidity_usd_low_pool": 3281870.86,
+      "liquidity_usd_high_pool": 3313329.38,
+      "volume_24h_usd_low_pool": 571938.4,
+      "volume_24h_usd_high_pool": 5140417.99,
+      "simulation_ok": false,
+      "simulation_message": "Market-data research signal only; requires route quote and eth_call simulation before execution.",
+      "research_source": "dexscreener token-pairs"
+    }
+  ],
+  "errors": [],
+  "thresholds": {
+    "min_liquidity_usd": 25000,
+    "min_volume_24h_usd": 10000,
+    "min_spread_bps": 20,
+    "trade_size_usd": 10000
+  }
+}

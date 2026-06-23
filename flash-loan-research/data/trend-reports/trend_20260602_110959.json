@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-06-02T11:09:59.284562+00:00",
+  "current_gas_data": {
+    "arbitrum": {
+      "timestamp": "2026-06-02T11:09:58.973719+00:00",
+      "gas_price_gwei": 0.020002,
+      "base_fee_gwei": 0.0204,
+      "priority_fee_gwei": 0.0,
+      "network": "arbitrum"
+    },
+    "base": {
+      "timestamp": "2026-06-02T11:09:59.219985+00:00",
+      "gas_price_gwei": 0.006,
+      "base_fee_gwei": 0.005,
+      "priority_fee_gwei": 0.001,
+      "network": "base"
+    }
+  },
+  "trends": {
+    "arbitrum": {
+      "period_hours": 24,
+      "data_points": 2,
+      "avg_gas_price_gwei": 0.0202,
+      "min_gas_price_gwei": 0.02,
+      "max_gas_price_gwei": 0.0203,
+      "current_gas_price_gwei": 0.020002,
+      "trend_direction": "down",
+      "trend_percent": -1.65
+    },
+    "base": {
+      "period_hours": 24,
+      "data_points": 2,
+      "avg_gas_price_gwei": 0.006,
+      "min_gas_price_gwei": 0.006,
+      "max_gas_price_gwei": 0.006,
+      "current_gas_price_gwei": 0.006,
+      "trend_direction": "down",
+      "trend_percent": 0.0
+    }
+  },
+  "recommendations": [
+    "\ud83c\udfaf Excellent gas prices - optimal time for execution",
+    "\u2705 Excellent conditions - both networks are cost-effective",
+    "\ud83d\udca1 Base is 70.0% cheaper"
+  ],
+  "historical_points": 4
+}

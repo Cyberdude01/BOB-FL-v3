@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-06-05T07:54:22.740400",
+  "arbitrum": {
+    "status": "success",
+    "tests": {
+      "connection": "passed",
+      "block_number": 470345104,
+      "wallet_balance": 0.015190440893331818,
+      "gas_price": 0.020484,
+      "transaction_hash": "9e2657f47a43511d4f971f5640eada592702dcbbc0b7ac6398dfd743b688ea9b",
+      "transaction_cost": 1.0133e-06,
+      "transaction_nonce": 54,
+      "confirmation_timeout": true,
+      "confirmation_error": "Transaction HexBytes('0x9e2657f47a43511d4f971f5640eada592702dcbbc0b7ac6398dfd743b688ea9b') is not in the chain after 60 seconds"
+    }
+  },
+  "base": {
+    "status": "success",
+    "tests": {
+      "connection": "passed",
+      "block_number": 46940958,
+      "gas_price": 0.015995679
+    }
+  },
+  "flash_loans": {
+    "status": "pending",
+    "tests": {
+      "opportunity_valid": true,
+      "validation_reason": "Opportunity valid",
+      "transactions_generated": 3,
+      "execution_result": {
+        "success": false,
+        "error": "{'code': -32000, 'message': 'gas required exceeds allowance (0)'}"
+      },
+      "execution_success": false,
+      "execution_error": "{'code': -32000, 'message': 'gas required exceeds allowance (0)'}"
+    }
+  },
+  "overall": "partial_success"
+}

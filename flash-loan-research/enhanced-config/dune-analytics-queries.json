@@ -1,0 +1,146 @@
+{
+  "flash_loan_queries": {
+    "aave_flash_loan_usage": {
+      "name": "Aave Flash Loan Usage",
+      "query_id": 1234567,
+      "description": "Tracks flash loan usage patterns on Aave",
+      "parameters": {
+        "days": 7,
+        "min_amount": 10000
+      }
+    },
+    "flash_loan_profit_opportunities": {
+      "name": "Flash Loan Profit Opportunities",
+      "query_id": 1234568,
+      "description": "Identifies profitable flash loan arbitrage opportunities",
+      "parameters": {
+        "min_profit_usd": 500,
+        "min_liquidity_usd": 100000
+      }
+    },
+    "flash_loan_risk_metrics": {
+      "name": "Flash Loan Risk Metrics",
+      "query_id": 1234569,
+      "description": "Tracks risk metrics for flash loan activities",
+      "parameters": {
+        "timeframe": "7 days"
+      }
+    }
+  },
+  "arbitrage_queries": {
+    "dex_price_discrepancies": {
+      "name": "DEX Price Discrepancies",
+      "query_id": 1234570,
+      "description": "Finds price discrepancies between DEXes",
+      "parameters": {
+        "min_difference_percent": 0.1,
+        "volume_threshold": 100000
+      }
+    },
+    "triangular_arbitrage_opportunities": {
+      "name": "Triangular Arbitrage Opportunities",
+      "query_id": 1234571,
+      "description": "Identifies triangular arbitrage opportunities",
+      "parameters": {
+        "min_profit_usd": 1000,
+        "gas_limit": 500000
+      }
+    },
+    "cross_chain_arbitrage": {
+      "name": "Cross-Chain Arbitrage",
+      "query_id": 1234572,
+      "description": "Finds price differences across different chains",
+      "parameters": {
+        "min_difference_percent": 0.5,
+        "bridge_fee_threshold": 100
+      }
+    }
+  },
+  "market_data_queries": {
+    "token_liquidity_tracking": {
+      "name": "Token Liquidity Tracking",
+      "query_id": 1234573,
+      "description": "Tracks liquidity for major trading pairs",
+      "parameters": {
+        "min_liquidity_usd": 50000,
+        "tokens": ["USDC", "DAI", "USDT", "WETH", "WBTC"]
+      }
+    },
+    "volatility_analysis": {
+      "name": "Token Volatility Analysis",
+      "query_id": 1234574,
+      "description": "Analyzes price volatility of major tokens",
+      "parameters": {
+        "timeframe": "24 hours",
+        "volatility_threshold": 0.05
+      }
+    },
+    "gas_price_monitoring": {
+      "name": "Gas Price Monitoring",
+      "query_id": 1234575,
+      "description": "Monitors gas prices across different networks",
+      "parameters": {
+        "networks": ["ethereum", "polygon", "arbitrum", "base"]
+      }
+    }
+  },
+  "defi_protocol_queries": {
+    "protocol_tvl_tracking": {
+      "name": "Protocol TVL Tracking",
+      "query_id": 1234576,
+      "description": "Tracks Total Value Locked across DeFi protocols",
+      "parameters": {
+        "protocols": ["aave", "uniswap", "curve", "balancer"],
+        "min_tvl_usd": 1000000
+      }
+    },
+    "lending_rate_analysis": {
+      "name": "Lending Rate Analysis",
+      "query_id": 1234577,
+      "description": "Analyzes lending and borrowing rates",
+      "parameters": {
+        "protocols": ["aave", "compound"],
+        "min_difference_percent": 2
+      }
+    },
+    "flash_loan_provider_metrics": {
+      "name": "Flash Loan Provider Metrics",
+      "query_id": 1234578,
+      "description": "Tracks metrics for flash loan providers",
+      "parameters": {
+        "providers": ["aave", "dydx", "maker"],
+        "timeframe": "30 days"
+      }
+    }
+  },
+  "custom_opportunity_queries": {
+    "high_frequency_arbitrage": {
+      "name": "High Frequency Arbitrage",
+      "query_id": 1234579,
+      "description": "Identifies high-frequency arbitrage opportunities",
+      "parameters": {
+        "min_profit_usd": 200,
+        "max_duration_seconds": 300,
+        "min_liquidity_usd": 50000
+      }
+    },
+    "liquidation_opportunities": {
+      "name": "Liquidation Opportunities",
+      "query_id": 1234580,
+      "description": "Finds potential liquidation opportunities",
+      "parameters": {
+        "collateral_ratio": 0.8,
+        "liquidation_bonus": 0.1
+      }
+    },
+    "stablecoin_arbitrage": {
+      "name": "Stablecoin Arbitrage",
+      "query_id": 1234581,
+      "description": "Finds stablecoin arbitrage opportunities",
+      "parameters": {
+        "min_difference_bps": 10,
+        "min_liquidity_usd": 100000
+      }
+    }
+  }
+}

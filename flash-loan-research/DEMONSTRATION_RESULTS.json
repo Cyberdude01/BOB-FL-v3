@@ -1,0 +1,105 @@
+{
+  "timestamp": "2026-06-06T09:28:16.340064",
+  "initial_balance": {
+    "arbitrum_eth": 0.015190440893331818,
+    "base_eth": 0.015848750987186737,
+    "total_eth": 0.031039191880518555
+  },
+  "final_balance": {
+    "arbitrum_eth": 0.015190440893331818,
+    "base_eth": 0.015848750987186737,
+    "total_eth": 0.031039191880518555
+  },
+  "arbitrum_status": {
+    "network": "arbitrum",
+    "config": {
+      "dex": "camelot",
+      "gas_limit": 300000,
+      "priority_fee": 1000000000,
+      "max_fee": 20000000000,
+      "bundle_timeout": 60,
+      "enable_flashbots": false,
+      "enable_optimization": true
+    },
+    "metrics": {
+      "total_executions": 0,
+      "successful_executions": 0,
+      "failed_executions": 0,
+      "average_execution_time": 0.0,
+      "profit_per_execution": 0.0
+    },
+    "timestamp": "2026-06-06T09:28:15.952150",
+    "gas_monitoring": {
+      "base_gas_price": 20014000,
+      "priority_fee": 6004200,
+      "max_fee": 40028000,
+      "congestion_level": "unknown",
+      "confidence_score": 0.8,
+      "last_update": "2026-06-06T09:28:11.180178"
+    }
+  },
+  "base_status": {
+    "network": "base",
+    "config": {
+      "max_gas_price_gwei": 50.0,
+      "max_priority_fee_gwei": 2.0,
+      "min_liquidity_usd": 50000.0
+    },
+    "metrics": {
+      "total_attempts": 0,
+      "successful_executions": 0,
+      "failed_executions": 0,
+      "total_gas_cost": 0.0,
+      "total_profit": 0.0,
+      "average_execution_time": 0.0
+    },
+    "timestamp": "2026-06-06T09:28:15.952497",
+    "gas_monitoring": {
+      "base_gas_price": 6000000,
+      "priority_fee": 1800000,
+      "max_fee": 12000000,
+      "congestion_level": "unknown",
+      "confidence_score": 0.8,
+      "last_update": "2026-06-06T09:28:11.331305"
+    }
+  },
+  "arbitrum_gas_analysis": {
+    "base_gas_price": 20014000,
+    "priority_fee": 6004200,
+    "max_fee": 40028000,
+    "confidence_score": 0.8,
+    "congestion_level": "unknown",
+    "trend_analysis": {
+      "average_gas_price": 20014000.0,
+      "min_gas_price": 20014000,
+      "max_gas_price": 20014000,
+      "price_volatility": 0.0,
+      "data_points": 1,
+      "time_range_hours": 1
+    }
+  },
+  "base_gas_analysis": {
+    "base_gas_price": 6000000,
+    "priority_fee": 1800000,
+    "max_fee": 12000000,
+    "confidence_score": 0.8,
+    "congestion_level": "unknown",
+    "trend_analysis": {
+      "average_gas_price": 6000000.0,
+      "min_gas_price": 6000000,
+      "max_gas_price": 6000000,
+      "price_volatility": 0.0,
+      "data_points": 1,
+      "time_range_hours": 1
+    }
+  },
+  "network_recommendations": {
+    "arbitrum": [
+      "No network data available"
+    ],
+    "base": [
+      "No network data available"
+    ]
+  },
+  "systems_status": "FULLY OPERATIONAL"
+}

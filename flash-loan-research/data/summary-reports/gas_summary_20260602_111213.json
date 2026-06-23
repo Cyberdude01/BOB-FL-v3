@@ -1,0 +1,65 @@
+{
+  "timestamp": "2026-06-02T11:12:13.209102+00:00",
+  "eth_price_usd": 1979.18,
+  "total_portfolio_eth": 0.031067994565242556,
+  "total_portfolio_usd": 61.48915348363676,
+  "current_conditions": {
+    "arbitrum": {
+      "gas_data": {
+        "network": "arbitrum",
+        "timestamp": "2026-06-02T11:12:12.196188+00:00",
+        "gas_price_gwei": 0.02,
+        "base_fee_gwei": 0.02,
+        "priority_fee_gwei": 0.0,
+        "block_number": 469253875
+      },
+      "balance_eth": 0.015219243578055817,
+      "balance_usd": 30.121622504816514
+    },
+    "base": {
+      "gas_data": {
+        "network": "base",
+        "timestamp": "2026-06-02T11:12:13.088531+00:00",
+        "gas_price_gwei": 0.006,
+        "base_fee_gwei": 0.005,
+        "priority_fee_gwei": 0.001,
+        "block_number": 46804692
+      },
+      "balance_eth": 0.015848750987186737,
+      "balance_usd": 31.36753097882025
+    }
+  },
+  "trends": {
+    "arbitrum": {
+      "current": 0.020002,
+      "average": 0.02017,
+      "minimum": 0.020002,
+      "maximum": 0.020338,
+      "trend": "stable",
+      "recent_average": 0.020002,
+      "data_points": 2
+    },
+    "base": {
+      "current": 0.006,
+      "average": 0.006,
+      "minimum": 0.006,
+      "maximum": 0.006,
+      "trend": "stable",
+      "recent_average": 0.006,
+      "data_points": 2
+    }
+  },
+  "recommendations": [
+    "\ud83d\udca1 Use Base network for significant cost savings"
+  ],
+  "cost_comparison": [
+    [
+      "arbitrum",
+      0.019791800000000002
+    ],
+    [
+      "base",
+      0.0047500319999999995
+    ]
+  ]
+}

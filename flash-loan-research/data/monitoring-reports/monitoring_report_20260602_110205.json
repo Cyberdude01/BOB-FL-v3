@@ -1,0 +1,98 @@
+{
+  "timestamp": "2026-06-02T11:02:05.157258+00:00",
+  "wallet": "0xc18EdE537AE7fD823d7A20942E11DfB067D47694",
+  "eth_price_usd": 1980.62,
+  "latest_execution": {
+    "created_at": "2026-06-02T10:48:35.062049+00:00",
+    "mode": "live_minimal_execution",
+    "networks": {
+      "arbitrum": {
+        "success": true,
+        "opportunity": {
+          "id": "live_arbitrum_1780397315",
+          "estimated_profit_usd": 150.0,
+          "liquidity_usd": 75000.0,
+          "confidence_score": 0.82,
+          "token_pair": "USDC-WETH"
+        },
+        "strategy": {
+          "dex": "camelot",
+          "gas_limit": 500000,
+          "priority_fee": 2,
+          "max_fee": 20,
+          "bundle_timeout": 30,
+          "notes": "Arbitrum: Camelot-based checkout (scaffold)"
+        },
+        "execution_time": 0.0003218650817871094,
+        "gas_used": null,
+        "gas_cost_eth": null,
+        "error_message": null
+      },
+      "base": {
+        "success": true,
+        "opportunity": {
+          "id": "live_base_1780397315",
+          "estimated_profit_usd": 125.0,
+          "liquidity_usd": 75000.0,
+          "confidence_score": 0.82,
+          "token_pair": "USDC-WETH"
+        },
+        "strategy": {
+          "dex": "aero",
+          "veAERO_voting": true,
+          "gas_limit": 400000,
+          "priority_fee": 1,
+          "max_fee": 15,
+          "bundle_timeout": 25
+        },
+        "execution_time": 9.560585021972656e-05,
+        "gas_used": null,
+        "gas_cost_eth": null,
+        "error_message": null
+      }
+    },
+    "safety": {
+      "execution_enabled": true,
+      "real_transactions_enabled": true,
+      "dry_run_mode": false
+    },
+    "integrated_workflow": {
+      "arbitrum": {
+        "success": true,
+        "steps": [
+          "pattern_recognition",
+          "playbook_selection",
+          "risk_evaluation",
+          "strategy_selection",
+          "execution",
+          "metrics_recording"
+        ],
+        "risk_decision": true,
+        "error_message": null
+      },
+      "base": {
+        "success": true,
+        "steps": [
+          "pattern_recognition",
+          "playbook_selection",
+          "risk_evaluation",
+          "strategy_selection",
+          "execution",
+          "metrics_recording"
+        ],
+        "risk_decision": true,
+        "error_message": null
+      }
+    }
+  },
+  "performance_trends": {
+    "success_rate": 0,
+    "avg_gas_cost_usd": 0,
+    "avg_execution_time": 0
+  },
+  "current_balances": {},
+  "recommendations": [
+    "\u26a0\ufe0f Some transactions failed - investigate root causes",
+    "\ud83d\udca1 Base is $0.0151 cheaper per transaction"
+  ]
+}

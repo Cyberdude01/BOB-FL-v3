@@ -1,0 +1,20 @@
+# Flash Loan Research Cron Jobs
+# These jobs will run for 5 days of research
+
+# Data Collection - Every 30 minutes during research hours
+0,30 8-17 * * * /usr/bin/python3 /root/.openclaw/workspace/flash-loan-research/data-collector.py >> /root/.openclaw/workspace/flash-loan-research/logs/collector.log 2>&1
+
+# Daily Report Generation - 9:00 AM SAST
+0 9 * * * /usr/bin/python3 /root/.openclaw/workspace/flash-loan-research/daily-report-generator.py $(date '+%Y-%m-%d') >> /root/.openclaw/workspace/flash-loan-research/logs/report.log 2>&1
+
+# Research Period: 5 consecutive days starting from tomorrow
+# Set cron to run daily for 5 days, then disable automatically
+
+# Cleanup and Summary - After 5 days research complete
+0 10 * * * /root/.openclaw/workspace/flash-loan-research/research-summary.sh >> /root/.openclaw/workspace/flash-loan-research/logs/summary.log 2>&1
+
+# Database Backup - Daily at 2:00 AM
+0 2 * * * /usr/bin/sqlite3 /root/.openclaw/workspace/flash-loan-research/flash_loan_research.db ".backup /root/.openclaw/workspace/flash-loan-research/backups/research_backup_$(date '+%Y%m%d').db"
+
+# Log Rotation - Weekly
+0 0 * * 0 /usr/bin/find /root/.openclaw/workspace/flash-loan-research/logs -name "*.log" -mtime +7 -delete

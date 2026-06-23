@@ -1,0 +1,5 @@
+# systemctl flash/openclaw/python related units on source VM
+flash-loan.service                           enabled         enabled
+supervisor.service                           enabled         enabled
+\n# running service state
+  supervisor.service        loaded active running Supervisor process control system for UNIX

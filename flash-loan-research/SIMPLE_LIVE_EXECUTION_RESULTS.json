@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-06-06T09:36:06.615722",
+  "initial_balance": {
+    "arbitrum_eth": 0.015190440893331818,
+    "base_eth": 0.015848750987186737,
+    "total_eth": 0.031039191880518555
+  },
+  "final_balance": {
+    "arbitrum_eth": 0.015190440893331818,
+    "base_eth": 0.015848750987186737,
+    "total_eth": 0.031039191880518555
+  },
+  "total_profit_eth": 0.0,
+  "total_profit_usd": 0.0,
+  "arbitrum_result": {
+    "success": false,
+    "result": {
+      "success": false,
+      "error": "{'code': -32000, 'message': 'gas required exceeds allowance (0)'}"
+    },
+    "execution_time": 0.343350887298584,
+    "opportunity_id": "simple_live_arbitrum_1780763714",
+    "network": "arbitrum",
+    "balance_before": 0.031039191880518555,
+    "balance_after": 0.031039191880518555,
+    "balance_diff": 0.0,
+    "profit_usd": 0.0
+  },
+  "base_result": {
+    "id": "base_exec_1780763750",
+    "opportunity_id": "simple_live_base_1780763750",
+    "timestamp": "2026-06-06T09:35:50.887548",
+    "success": false,
+    "profit_usd": 0.0,
+    "gas_cost_usd": 0,
+    "error": "name 'random' is not defined",
+    "execution_time": 0.00011944770812988281,
+    "network": "base",
+    "protocol": "uniswap",
+    "token_pair": "USDC-USDT",
+    "balance_before": 0.031039191880518555,
+    "balance_after": 0.031039191880518555,
+    "balance_diff": 0.0
+  },
+  "successful_transactions": 0,
+  "execution_status": "COMPLETED"
+}

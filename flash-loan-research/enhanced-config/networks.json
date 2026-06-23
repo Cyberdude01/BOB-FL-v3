@@ -1,0 +1,44 @@
+{
+  "supported_networks": {
+    "ethereum": {
+      "name": "Ethereum Mainnet",
+      "chain_id": 1,
+      "infura_endpoint": "https://mainnet.infura.io/v3/fef2edcc615944ca816d857741ef9d5d",
+      "the_graph_endpoint": "https://api.thegraph.com/subgraphs/name",
+      "explorer": "https://etherscan.io",
+      "currency": "ETH",
+      "block_time": 12,
+      "gas_currency": "ETH"
+    },
+    "polygon": {
+      "name": "Polygon",
+      "chain_id": 137,
+      "infura_endpoint": "https://polygon-mainnet.infura.io/v3/fef2edcc615944ca816d857741ef9d5d",
+      "the_graph_endpoint": "https://api.thegraph.com/subgraphs/name",
+      "explorer": "https://polygonscan.com",
+      "currency": "MATIC",
+      "block_time": 2,
+      "gas_currency": "MATIC"
+    },
+    "arbitrum": {
+      "name": "Arbitrum One",
+      "chain_id": 42161,
+      "infura_endpoint": "https://arbitrum-mainnet.infura.io/v3/fef2edcc615944ca816d857741ef9d5d",
+      "the_graph_endpoint": "https://api.thegraph.com/subgraphs/name",
+      "explorer": "https://arbiscan.io",
+      "currency": "ETH",
+      "block_time": 0.25,
+      "gas_currency": "ETH"
+    },
+    "base": {
+      "name": "Base",
+      "chain_id": 8453,
+      "infura_endpoint": "https://base-mainnet.infura.io/v3/fef2edcc615944ca816d857741ef9d5d",
+      "the_graph_endpoint": "https://api.thegraph.com/subgraphs/name",
+      "explorer": "https://basescan.org",
+      "currency": "ETH",
+      "block_time": 2,
+      "gas_currency": "ETH"
+    }
+  }
+}

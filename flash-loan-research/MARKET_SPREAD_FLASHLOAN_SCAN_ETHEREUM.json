@@ -1,0 +1,86 @@
+{
+  "timestamp": "2026-06-23T07:19:20Z",
+  "network": "ethereum",
+  "contract": null,
+  "scanner": "market_spread",
+  "candidates_found": 2,
+  "results": [
+    {
+      "network": "ethereum",
+      "borrow": "USDC",
+      "mid": "WBTC",
+      "amount": 10000000000,
+      "amount_human": 10000,
+      "routerA": {
+        "name": "uniswap",
+        "address": "0xb98437c7ba28c6590dd4e1cc46aa89eed181f97108e5b6221730d41347bc817f",
+        "url": "https://dexscreener.com/ethereum/0xb98437c7ba28c6590dd4e1cc46aa89eed181f97108e5b6221730d41347bc817f",
+        "role": "buy_low_pool"
+      },
+      "routerB": {
+        "name": "uniswap",
+        "address": "0x56534741CD8B152df6d48AdF7ac51f75169A83b2",
+        "url": "https://dexscreener.com/ethereum/0x56534741cd8b152df6d48adf7ac51f75169a83b2",
+        "role": "sell_high_pool"
+      },
+      "mid_out": null,
+      "final_out": null,
+      "premium": 5.0,
+      "gross_profit_token": 32.185103,
+      "gas_usd": 0.05,
+      "net_profit_usd": 27.135103,
+      "spread_bps": 32.19,
+      "low_price_usd": 62737.84,
+      "high_price_usd": 62940.22,
+      "liquidity_usd_low_pool": 8067104.23,
+      "liquidity_usd_high_pool": 12112862.57,
+      "volume_24h_usd_low_pool": 924383.6,
+      "volume_24h_usd_high_pool": 9562155.88,
+      "simulation_ok": false,
+      "simulation_message": "Market-data research signal only; requires route quote and eth_call simulation before execution.",
+      "research_source": "dexscreener token-pairs"
+    },
+    {
+      "network": "ethereum",
+      "borrow": "USDC",
+      "mid": "WETH",
+      "amount": 3838871800,
+      "amount_human": 3838.87,
+      "routerA": {
+        "name": "sushiswap",
+        "address": "0x397FF1542f962076d0BFE58eA045FfA2d347ACa0",
+        "url": "https://dexscreener.com/ethereum/0x397ff1542f962076d0bfe58ea045ffa2d347aca0",
+        "role": "buy_low_pool"
+      },
+      "routerB": {
+        "name": "pancakeswap",
+        "address": "0xaCDb27b266142223e1e676841C1E809255Fc6d07",
+        "url": "https://dexscreener.com/ethereum/0xacdb27b266142223e1e676841c1e809255fc6d07",
+        "role": "sell_high_pool"
+      },
+      "mid_out": null,
+      "final_out": null,
+      "premium": 1.9194359,
+      "gross_profit_token": 16.56011,
+      "gas_usd": 0.05,
+      "net_profit_usd": 14.590675,
+      "spread_bps": 43.14,
+      "low_price_usd": 1687.1,
+      "high_price_usd": 1694.4,
+      "liquidity_usd_low_pool": 231103.52,
+      "liquidity_usd_high_pool": 191943.59,
+      "volume_24h_usd_low_pool": 10341.83,
+      "volume_24h_usd_high_pool": 654610.84,
+      "simulation_ok": false,
+      "simulation_message": "Market-data research signal only; requires route quote and eth_call simulation before execution.",
+      "research_source": "dexscreener token-pairs"
+    }
+  ],
+  "errors": [],
+  "thresholds": {
+    "min_liquidity_usd": 25000,
+    "min_volume_24h_usd": 10000,
+    "min_spread_bps": 20,
+    "trade_size_usd": 10000
+  }
+}

@@ -1,0 +1,9 @@
+# Discovered crontab on source VM (sanitized manually before restore)
+
+
+# Flash loan research agent - hourly scans, daily 09:00 SAST Telegram report
+0 * * * * cd /root/.openclaw/workspace/flash-loan-research && /root/.openclaw/workspace/flash-loan-research/venv/bin/python flashloan_research_agent.py scan --networks ethereum optimism arbitrum base >> /root/.openclaw/workspace/flash-loan-research/logs/research-agent.cron.log 2>&1
+CRON_TZ=Africa/Johannesburg
+0 9 * * * cd /root/.openclaw/workspace/flash-loan-research && /root/.openclaw/workspace/flash-loan-research/venv/bin/python flashloan_research_agent.py report --send --target 7724052486 >> /root/.openclaw/workspace/flash-loan-research/logs/research-agent.cron.log 2>&1
+4 * * * * cd /root/.openclaw/workspace/flash-loan-research && /root/.openclaw/workspace/flash-loan-research/venv/bin/python route_verification_bridge.py --limit 50 >> /root/.openclaw/workspace/flash-loan-research/logs/route-verification-bridge.cron.log 2>&1
+6 * * * * cd /root/.openclaw/workspace/flash-loan-research && /root/.openclaw/workspace/flash-loan-research/venv/bin/python flashloan_execution_dispatcher.py >> /root/.openclaw/workspace/flash-loan-research/logs/execution-dispatcher.cron.log 2>&1

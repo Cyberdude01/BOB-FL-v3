@@ -1,0 +1,15 @@
+[Unit]
+Description=Enhanced Flash Loan Monitoring System
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/.openclaw/workspace/flash-loan-research
+Environment=PATH=/root/.openclaw/workspace/flash-loan-research/venv_enhanced/bin
+ExecStart=/root/.openclaw/workspace/flash-loan-research/venv_enhanced/bin/python scripts/monitor_enhanced.py --continuous --interval 30
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target

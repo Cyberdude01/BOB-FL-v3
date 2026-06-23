@@ -1,0 +1,26 @@
+[Unit]
+Description=Flash Loan Monitor Service
+After=network.target
+Requires=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/flash-loan
+Environment=PATH=/opt/flash-loan/venv/bin
+ExecStart=/opt/flash-loan/venv/bin/python /opt/flash-loan/scripts/continuous_flash_loan_campaign.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/flash-loan
+ReadWritePaths=/var/log/flash-loan
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,165 @@
+{
+  "target_per_network": 12,
+  "arbitrum_success": 0,
+  "base_success": 0,
+  "arbitrum_attempts": 2,
+  "base_attempts": 2,
+  "consecutive_failures": 4,
+  "started_at": "2026-06-06T11:08:44.408615",
+  "events": [
+    {
+      "network": "arbitrum",
+      "opportunity_id": "guarded_arbitrum_1780769324",
+      "before": {
+        "arbitrum_eth": 0.015188286093981818,
+        "base_eth": 0.015848750987186737,
+        "total_eth": 0.031037037081168554,
+        "arbitrum_usd": 23.7897162747256,
+        "base_usd": 24.82421564625033,
+        "total_usd": 48.61393192097593,
+        "timestamp": "2026-06-06T11:08:44.860259"
+      },
+      "after": {
+        "arbitrum_eth": 0.015188286093981818,
+        "base_eth": 0.015848750987186737,
+        "total_eth": 0.031037037081168554,
+        "arbitrum_usd": 23.7897162747256,
+        "base_usd": 24.82421564625033,
+        "total_usd": 48.61393192097593,
+        "timestamp": "2026-06-06T11:08:53.176477"
+      },
+      "balance_diff_eth": 0.0,
+      "balance_diff_usd": 0.0,
+      "engine_result": {
+        "success": false,
+        "reason": "No transactions generated",
+        "execution_time": 0.23030591011047363
+      },
+      "success": false,
+      "timestamp": "2026-06-06T11:08:53.176514"
+    },
+    {
+      "network": "base",
+      "opportunity_id": "guarded_base_1780769333",
+      "before": {
+        "arbitrum_eth": 0.015188286093981818,
+        "base_eth": 0.015848750987186737,
+        "total_eth": 0.031037037081168554,
+        "arbitrum_usd": 23.7897162747256,
+        "base_usd": 24.82421564625033,
+        "total_usd": 48.61393192097593,
+        "timestamp": "2026-06-06T11:08:53.339849"
+      },
+      "after": {
+        "arbitrum_eth": 0.015188286093981818,
+        "base_eth": 0.015848750987186737,
+        "total_eth": 0.031037037081168554,
+        "arbitrum_usd": 23.7897162747256,
+        "base_usd": 24.82421564625033,
+        "total_usd": 48.61393192097593,
+        "timestamp": "2026-06-06T11:09:01.437508"
+      },
+      "balance_diff_eth": 0.0,
+      "balance_diff_usd": 0.0,
+      "engine_result": {
+        "id": "base_exec_1780769333",
+        "opportunity_id": "guarded_base_1780769333",
+        "timestamp": "2026-06-06T11:08:53.340106",
+        "success": false,
+        "profit_usd": 0,
+        "gas_cost_usd": 0,
+        "error": "Base live execution not implemented: previous path was simulation-only. Requires atomic flash-loan contract + receipt/balance verification.",
+        "confidence_score": 0.99,
+        "execution_time": 9.5367431640625e-05,
+        "network": "base",
+        "protocol": "aerodrome",
+        "token_pair": "USDC-USDT",
+        "simulated_only": true
+      },
+      "success": false,
+      "timestamp": "2026-06-06T11:09:01.437531"
+    },
+    {
+      "network": "arbitrum",
+      "opportunity_id": "guarded_arbitrum_1780769341",
+      "before": {
+        "arbitrum_eth": 0.015188286093981818,
+        "base_eth": 0.015848750987186737,
+        "total_eth": 0.031037037081168554,
+        "arbitrum_usd": 23.7897162747256,
+        "base_usd": 24.82421564625033,
+        "total_usd": 48.61393192097593,
+        "timestamp": "2026-06-06T11:09:01.622806"
+      },
+      "after": {
+        "arbitrum_eth": 0.015188286093981818,
+        "base_eth": 0.015848750987186737,
+        "total_eth": 0.031037037081168554,
+        "arbitrum_usd": 23.7897162747256,
+        "base_usd": 24.82421564625033,
+        "total_usd": 48.61393192097593,
+        "timestamp": "2026-06-06T11:09:09.719945"
+      },
+      "balance_diff_eth": 0.0,
+      "balance_diff_usd": 0.0,
+      "engine_result": {
+        "success": false,
+        "reason": "No transactions generated",
+        "execution_time": 0.0029249191284179688
+      },
+      "success": false,
+      "timestamp": "2026-06-06T11:09:09.719964"
+    },
+    {
+      "network": "base",
+      "opportunity_id": "guarded_base_1780769349",
+      "before": {
+        "arbitrum_eth": 0.015188286093981818,
+        "base_eth": 0.015848750987186737,
+        "total_eth": 0.031037037081168554,
+        "arbitrum_usd": 23.7897162747256,
+        "base_usd": 24.82421564625033,
+        "total_usd": 48.61393192097593,
+        "timestamp": "2026-06-06T11:09:09.881990"
+      },
+      "after": {
+        "arbitrum_eth": 0.015188286093981818,
+        "base_eth": 0.015848750987186737,
+        "total_eth": 0.031037037081168554,
+        "arbitrum_usd": 23.7897162747256,
+        "base_usd": 24.82421564625033,
+        "total_usd": 48.61393192097593,
+        "timestamp": "2026-06-06T11:09:17.967062"
+      },
+      "balance_diff_eth": 0.0,
+      "balance_diff_usd": 0.0,
+      "engine_result": {
+        "id": "base_exec_1780769349",
+        "opportunity_id": "guarded_base_1780769349",
+        "timestamp": "2026-06-06T11:09:09.882318",
+        "success": false,
+        "profit_usd": 0,
+        "gas_cost_usd": 0,
+        "error": "Base live execution not implemented: previous path was simulation-only. Requires atomic flash-loan contract + receipt/balance verification.",
+        "confidence_score": 0.99,
+        "execution_time": 0.00011110305786132812,
+        "network": "base",
+        "protocol": "aerodrome",
+        "token_pair": "USDC-USDT",
+        "simulated_only": true
+      },
+      "success": false,
+      "timestamp": "2026-06-06T11:09:17.967081"
+    }
+  ],
+  "updated_at": "2026-06-06T11:09:18.046144",
+  "current_balance": {
+    "arbitrum_eth": 0.015188286093981818,
+    "base_eth": 0.015848750987186737,
+    "total_eth": 0.031037037081168554,
+    "arbitrum_usd": 23.7897162747256,
+    "base_usd": 24.82421564625033,
+    "total_usd": 48.61393192097593,
+    "timestamp": "2026-06-06T11:09:18.127334"
+  }
+}

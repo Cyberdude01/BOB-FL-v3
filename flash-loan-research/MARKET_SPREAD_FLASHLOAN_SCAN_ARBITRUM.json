@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-06-23T06:24:31Z",
+  "network": "arbitrum",
+  "contract": null,
+  "scanner": "market_spread",
+  "candidates_found": 1,
+  "results": [
+    {
+      "network": "arbitrum",
+      "borrow": "USDC",
+      "mid": "WBTC",
+      "amount": 1416564400,
+      "amount_human": 1416.56,
+      "routerA": {
+        "name": "uniswap",
+        "address": "0xac70bD92F89e6739B3a08Db9B6081a923912f73D",
+        "url": "https://dexscreener.com/arbitrum/0xac70bd92f89e6739b3a08db9b6081a923912f73d",
+        "role": "buy_low_pool"
+      },
+      "routerB": {
+        "name": "uniswap",
+        "address": "0x6985cb98CE393FCE8d6272127F39013f61e36166",
+        "url": "https://dexscreener.com/arbitrum/0x6985cb98ce393fce8d6272127f39013f61e36166",
+        "role": "sell_high_pool"
+      },
+      "mid_out": null,
+      "final_out": null,
+      "premium": 0.7082822,
+      "gross_profit_token": 4.276297,
+      "gas_usd": 0.002,
+      "net_profit_usd": 3.566015,
+      "spread_bps": 30.19,
+      "low_price_usd": 62517.41,
+      "high_price_usd": 62706.25,
+      "liquidity_usd_low_pool": 70828.22,
+      "liquidity_usd_high_pool": 217537.01,
+      "volume_24h_usd_low_pool": 53500.23,
+      "volume_24h_usd_high_pool": 24700.75,
+      "simulation_ok": false,
+      "simulation_message": "Market-data research signal only; requires route quote and eth_call simulation before execution.",
+      "research_source": "dexscreener token-pairs"
+    }
+  ],
+  "errors": [],
+  "thresholds": {
+    "min_liquidity_usd": 25000,
+    "min_volume_24h_usd": 10000,
+    "min_spread_bps": 20,
+    "trade_size_usd": 10000
+  }
+}

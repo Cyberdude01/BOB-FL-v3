@@ -1,0 +1,169 @@
+{
+  "flash_loan_providers": {
+    "aave": {
+      "name": "Aave",
+      "description": "Decentralized money market protocol",
+      "supported_chains": ["ethereum", "polygon", "arbitrum", "avalanche", "bsc", "optimism", "celo", "fantom", "moonbeam", "moonriver"],
+      "subgraph_urls": {
+        "ethereum": "https://api.thegraph.com/subgraphs/name/aave/aave-v2",
+        "polygon": "https://api.thegraph.com/subgraphs/name/aave/aave-v2-matic",
+        "arbitrum": "https://api.thegraph.com/subgraphs/name/aave/gho-arbitrum",
+        "avalanche": "https://api.thegraph.com/subgraphs/name/aave/aave-v2-avalanche",
+        "bsc": "https://api.thegraph.com/subgraphs/name/aave/aave-v2-bsc",
+        "optimism": "https://api.thegraph.com/subgraphs/name/aave/gho-optimism",
+        "celo": "https://api.thegraph.com/subgraphs/name/aave/aave-v2-celo",
+        "fantom": "https://api.thegraph.com/subgraphs/name/aave/aave-v2-fantom",
+        "moonbeam": "https://api.thegraph.com/subgraphs/name/aave/aave-v2-moonbeam",
+        "moonriver": "https://api.thegraph.com/subgraphs/name/aave/aave-v2-moonriver"
+      },
+      "pool_types": ["stable", "variable", "collateral"],
+      "supported_tokens": ["USDC", "DAI", "USDT", "WETH", "WBTC", "LINK", "UNI", "AAVE"]
+    },
+    "dydx": {
+      "name": "dYdX",
+      "description": "Perpetuals and spot trading platform",
+      "supported_chains": ["ethereum", "arbitrum"],
+      "subgraph_urls": {
+        "ethereum": "https://api.thegraph.com/subgraphs/name/dydxprotocol/dydx",
+        "arbitrum": "https://api.thegraph.com/subgraphs/name/dydxprotocol/dydx-arbitrum"
+      },
+      "features": ["perpetual_swaps", "spot_trading", "margin_trading"],
+      "supported_tokens": ["USDC", "WETH", "WBTC", "LINK", "UNI"]
+    },
+    "maker": {
+      "name": "MakerDAO",
+      "description": "Decentralized stablecoin system",
+      "supported_chains": ["ethereum", "arbitrum", "optimism"],
+      "subgraph_urls": {
+        "ethereum": "https://api.thegraph.com/subgraphs/name/makerdao/mcd",
+        "arbitrum": "https://api.thegraph.com/subgraphs/name/makerdao/mcd-arbitrum",
+        "optimism": "https://api.thegraph.com/subgraphs/name/makerdao/mcd-optimism"
+      },
+      "special_features": ["dai_flash_loans", "cdp_management", "dsu"],
+      "supported_tokens": ["DAI", "WETH", "WBTC", "LINK"]
+    },
+    "balancer_v2": {
+      "name": "Balancer V2",
+      "description": "Automated market maker protocol",
+      "supported_chains": ["ethereum", "polygon", "arbitrum", "avalanche", "bsc", "optimism", "celo", "fantom"],
+      "subgraph_urls": {
+        "ethereum": "https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-v2",
+        "polygon": "https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-polygon-v2",
+        "arbitrum": "https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-arbitrum-v2",
+        "avalanche": "https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-avalanche-v2",
+        "bsc": "https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-bsc-v2",
+        "optimism": "https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-optimism-v2",
+        "celo": "https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-celo-v2",
+        "fantom": "https://api.thegraph.com/subgraphs/name/balancer-labs/balancer-fantom-v2"
+      },
+      "pool_types": ["weighted", "stable", "meta-stable"],
+      "supported_tokens": ["USDC", "DAI", "USDT", "WETH", "WBTC", "LINK", "UNI", "AAVE"]
+    },
+    "curve": {
+      "name": "Curve Finance",
+      "description": "Decentralized exchange for stablecoins",
+      "supported_chains": ["ethereum", "arbitrum", "avalanche", "bsc", "optimism", "celo", "fantom"],
+      "subgraph_urls": {
+        "ethereum": "https://api.thegraph.com/subgraphs/name/curve-fi/curve-v2",
+        "arbitrum": "https://api.thegraph.com/subgraphs/name/curve-fi/curve-arbitrum",
+        "avalanche": "https://api.thegraph.com/subgraphs/name/curve-fi/curve-avalanche",
+        "bsc": "https://api.thegraph.com/subgraphs/name/curve-fi/curve-bsc",
+        "optimism": "https://api.thegraph.com/subgraphs/name/curve-fi/curve-optimism",
+        "celo": "https://api.thegraph.com/subgraphs/name/curve-fi/curve-celo",
+        "fantom": "https://api.thegraph.com/subgraphs/name/curve-fi/curve-fantom"
+      },
+      "pool_types": ["stableswap", "crypto", "factory"],
+      "supported_tokens": ["USDC", "DAI", "USDT", "CRV", "LINK", "UNI"]
+    },
+    "uniswap_v3": {
+      "name": "Uniswap V3",
+      "description": "Decentralized exchange with concentrated liquidity",
+      "supported_chains": ["ethereum", "polygon", "arbitrum", "base", "avalanche", "bsc", "celo", "optimism", "fantom"],
+      "subgraph_urls": {
+        "ethereum": "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3",
+        "polygon": "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3-polygon",
+        "arbitrum": "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3-arbitrum",
+        "base": "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3-base",
+        "avalanche": "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3-avalanche",
+        "bsc": "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3-bsc",
+        "celo": "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3-celo",
+        "optimism": "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3-optimism",
+        "fantom": "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v3-fantom"
+      },
+      "features": ["concentrated_liquidity", "fee_tiers", "position_manager"],
+      "supported_tokens": ["USDC", "DAI", "USDT", "WETH", "WBTC", "LINK", "UNI", "AAVE"]
+    }
+  },
+  "dex_protocols": {
+    "uniswap_v2": {
+      "name": "Uniswap V2",
+      "supported_chains": ["ethereum", "polygon", "arbitrum", "avalanche", "bsc", "optimism", "celo", "fantom", "moonbeam", "moonriver"],
+      "subgraph_urls": {
+        "ethereum": "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2",
+        "polygon": "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2-ethereum",
+        "arbitrum": "https://api.thegraph.com/subgraphs/name/ianlapham/uniswap-arbitrum",
+        "avalanche": "https://api.thegraph.com/subgraphs/name/ianlapham/uniswap-avalanche",
+        "bsc": "https://api.thegraph.com/subgraphs/name/pancakeswap/exchange",
+        "optimism": "https://api.thegraph.com/subgraphs/name/ianlapham/uniswap-optimism",
+        "celo": "https://api.thegraph.com/subgraphs/name/ianlapham/uniswap-celo",
+        "fantom": "https://api.thegraph.com/subgraphs/name/ianlapham/uniswap-fantom",
+        "moonbeam": "https://api.thegraph.com/subgraphs/name/messari/uniswap-v2-moonbeam",
+        "moonriver": "https://api.thegraph.com/subgraphs/name/messari/uniswap-v2-moonriver"
+      }
+    },
+    "sushiswap": {
+      "name": "SushiSwap",
+      "supported_chains": ["ethereum", "polygon", "arbitrum", "avalanche", "bsc", "optimism", "celo", "fantom", "moonbeam", "moonriver"],
+      "subgraph_urls": {
+        "ethereum": "https://api.thegraph.com/subgraphs/name/sushiswap/exchange",
+        "polygon": "https://api.thegraph.com/subgraphs/name/sushiswap/matic-exchange",
+        "arbitrum": "https://api.thegraph.com/subgraphs/name/sushiswap/arbitrum-exchange",
+        "avalanche": "https://api.thegraph.com/subgraphs-name/sushiswap/avalanche-exchange",
+        "bsc": "https://api.thegraph.com/subgraphs-name/sushiswap/bsc-exchange",
+        "optimism": "https://api.thegraph.com/subgraphs-name/sushiswap/optimism-exchange",
+        "celo": "https://api.thegraph.com/subgraphs-name/sushiswap/celo-exchange",
+        "fantom": "https://api.thegraph.com/subgraphs-name/sushiswap/fantom-exchange",
+        "moonbeam": "https://api.thegraph.com/subgraphs-name/sushiswap/moonbeam-exchange",
+        "moonriver": "https://api.thegraph.com/subgraphs-name/sushiswap/moonriver-exchange"
+      }
+    },
+    "pancakeswap_v2": {
+      "name": "PancakeSwap V2",
+      "supported_chains": ["bsc", "cronos"],
+      "subgraph_urls": {
+        "bsc": "https://api.thegraph.com/subgraphs/name/pancakeswap/exchange-v2",
+        "cronos": "https://api.thegraph.com/subgraphs/name/pancakeswap/cronos-exchange-v2"
+      }
+    },
+    "pancakeswap_v3": {
+      "name": "PancakeSwap V3",
+      "supported_chains": ["bsc", "cronos"],
+      "subgraph_urls": {
+        "bsc": "https://api.thegraph.com/subgraphs/name/pancakeswap/v3-bsc",
+        "cronos": "https://api.thegraph.com/subgraphs/name/pancakeswap/v3-cronos"
+      }
+    }
+  },
+  "bridges_and_cross_chain": {
+    "connext": {
+      "name": "Connext",
+      "supported_chains": ["ethereum", "polygon", "arbitrum", "avalanche", "bsc", "optimism", "base", "celo"],
+      "features": ["token_bridging", "instant_transfer", "relayers"]
+    },
+    "wormhole": {
+      "name": "Wormhole",
+      "supported_chains": ["ethereum", "polygon", "avalanche", "bsc", "arbitrum", "optimism", "fantom", "solana"],
+      "features": ["multi_chain", "nft_support", "governance"]
+    },
+    "hop": {
+      "name": "Hop Protocol",
+      "supported_chains": ["ethereum", "polygon", "arbitrum", "optimism", "gnosis"],
+      "features": ["token_bridging", "ltc_network", "relays"]
+    },
+    "multichain": {
+      "name": "Multichain",
+      "supported_chains": ["ethereum", "polygon", "arbitrum", "avalanche", "bsc", "fantom", "cronos", "klaytn"],
+      "features": ["cross_chain", "multi_token", "liquidity"]
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "last_updated": "2026-06-01",
+  "source_policy": "Addresses must be verified against official docs and block explorers before real transactions are enabled.",
+  "active_networks": ["arbitrum", "base"],
+  "networks": {
+    "arbitrum": {
+      "chain_id": 42161,
+      "tokens": {
+        "USDC": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+        "USDT": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
+        "DAI": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
+        "WETH": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"
+      },
+      "aave_v3": {
+        "pool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+        "pool_addresses_provider": "0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb"
+      },
+      "uniswap_v3": {
+        "factory": "0x1F98431c8aD98523631AE4a59f267346ea31F984",
+        "swap_router_02": "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
+        "universal_router_current": "0xa51afafe0263b40edaef0df8781ea9aa03e381a3",
+        "permit2": "0x000000000022D473030F116dDEE9F6B43aC78BA3"
+      },
+      "camelot": {
+        "amm_v2_factory": "0x6EcCab422D763aC031210895C81787E87B43A652",
+        "amm_v2_router": "0xc873fEcbd354f5A56E00E710B90EF4201db2448d",
+        "amm_v3_algebra_factory": "0x1a3c9B1d2F0529D97f2afC5136Cc23e58f1FD35B",
+        "amm_v3_quoter": "0x0Fc73040b26E9bC8514fA028D998E73A254Fa76E",
+        "amm_v3_swap_router": "0x1F721E2E82F6676FCE4eA07A5958cF098D339e18",
+        "amm_v4_algebra_factory": "0xBefC4b405041c5833f53412fF997ed2f697a2f37",
+        "amm_v4_quoter": "0xFe24b2cDfF01B644995bc248bA8497467d688F7B",
+        "amm_v4_swap_router": "0x4ee15342d6Deb297c3A2aA7CFFd451f788675F53"
+      }
+    },
+    "base": {
+      "chain_id": 8453,
+      "tokens": {
+        "USDC": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "USDT": "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
+        "DAI": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "WETH": "0x4200000000000000000000000000000000000006"
+      },
+      "aave_v3": {
+        "pool": "0xA238Dd80C259a72e81d7e4664a9801593F98d1c5",
+        "pool_addresses_provider": "0xe20fCBdBfFC4Dd138cE8b2E6FBb6CB49777ad64D"
+      },
+      "uniswap_v3": {
+        "factory": "0x33128a8fC17869897dcE68Ed026d694621f6FDfD",
+        "swap_router_02": "0x2626664c2603336E57B271c5C0b26F421741e481",
+        "universal_router_current": "0x6ff5693b99212da76ad316178a184ab56d299b43",
+        "permit2": "0x000000000022D473030F116dDEE9F6B43aC78BA3"
+      },
+      "aerodrome": {
+        "router": "0xcF77a3Ba9A5CA399B7c97c74d54e5b1Beb874E43",
+        "pool_factory": "VERIFY_BEFORE_REAL_TX",
+        "note": "Router address found via BaseScan search result. Pool factory and any additional Aerodrome addresses must be verified against official docs/GitHub/BaseScan before enabling real execution."
+      }
+    }
+  }
+}

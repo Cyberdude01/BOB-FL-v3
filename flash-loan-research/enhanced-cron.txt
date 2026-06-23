@@ -1,0 +1,9 @@
+# Enhanced Flash Loan Monitoring System Cron Jobs
+# Daily reports at 09:00 UTC
+0 9 * * * cd /root/.openclaw/workspace/flash-loan-research && source venv_enhanced/bin/activate && python scripts/generate_enhanced_report.py --days 1 --output data/reports/daily_$(date +\%Y\%m\%d).json
+
+# Hourly dashboard updates
+0 * * * * cd /root/.openclaw/workspace/flash-loan-research && source venv_enhanced/bin/activate && python scripts/dashboard.py > data/reports/hourly_dashboard_$(date +\%Y\%m\%d_\%H).json
+
+# Weekly summary
+0 10 * * 1 cd /root/.openclaw/workspace/flash-loan-research && source venv_enhanced/bin/activate && python scripts/generate_enhanced_report.py --days 7 --output data/reports/weekly_summary_$(date +\%Y\%m\%d).json

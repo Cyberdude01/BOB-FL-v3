@@ -1,0 +1,29 @@
+{
+  "research": {
+    "duration_days": 5,
+    "daily_report_time": "09:00",
+    "timezone": "SAST",
+    "protocols": {
+      "lending": ["aave", "compound", "makerdao"],
+      "dex": ["uniswap", "sushiswap", "pancakeswap"],
+      "oracles": ["chainlink", "band"]
+    },
+    "thresholds": {
+      "dex_arbitrage": 0.005,
+      "lending_arbitrage": 0.003,
+      "triangular_arbitrage": 0.004,
+      "liquidation_opportunity": 0.02
+    },
+    "networks": ["ethereum", "polygon", "bsc"]
+  },
+  "alerting": {
+    "email": "mark@polymarketbot.com",
+    "telegram_chat_id": "7724052486",
+    "format": "markdown"
+  },
+  "storage": {
+    "database": "sqlite",
+    "backup_interval": "daily",
+    "retention_days": 30
+  }
+}

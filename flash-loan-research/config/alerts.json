@@ -1,0 +1,38 @@
+{
+  "enabled": true,
+  "destinations": {
+    "telegram": {
+      "enabled": true,
+      "chat_id": "7724052486",
+      "note": "OpenClaw/message plugin handles delivery. Do not store bot tokens here."
+    },
+    "dashboard": {
+      "enabled": true,
+      "host": "0.0.0.0",
+      "port": 8080
+    }
+  },
+  "events": {
+    "transaction_success": { "enabled": true, "severity": "info" },
+    "transaction_failure": { "enabled": true, "severity": "critical" },
+    "profit_below_threshold": { "enabled": true, "severity": "warning" },
+    "rpc_downtime": { "enabled": true, "severity": "critical" },
+    "wallet_balance_below_minimum": { "enabled": true, "severity": "warning" },
+    "daily_loss_threshold_breached": { "enabled": true, "severity": "critical" },
+    "consecutive_failures": { "enabled": true, "severity": "critical" },
+    "gas_spike": { "enabled": true, "severity": "warning" },
+    "circuit_breaker_triggered": { "enabled": true, "severity": "critical" },
+    "unexpected_contract_revert": { "enabled": true, "severity": "critical" },
+    "provider_throttling": { "enabled": true, "severity": "warning" }
+  },
+  "thresholds": {
+    "min_wallet_balance_eth": {
+      "arbitrum": 0.005,
+      "base": 0.005
+    },
+    "max_daily_loss_usd_dev": 50,
+    "max_consecutive_failures": 3,
+    "gas_spike_multiplier": 2.0,
+    "profit_below_expected_pct": 20
+  }
+}

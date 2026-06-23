@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-06-23T06:13:55Z",
+  "network": "optimism",
+  "contract": null,
+  "scanner": "market_spread",
+  "candidates_found": 1,
+  "results": [
+    {
+      "network": "optimism",
+      "borrow": "USDC",
+      "mid": "WBTC",
+      "amount": 703871199,
+      "amount_human": 703.87,
+      "routerA": {
+        "name": "uniswap",
+        "address": "0x394A9fcBab8599437d9Ec4e5A4a0EB7cb1fd2F69",
+        "url": "https://dexscreener.com/optimism/0x394a9fcbab8599437d9ec4e5a4a0eb7cb1fd2f69",
+        "role": "buy_low_pool"
+      },
+      "routerB": {
+        "name": "uniswap",
+        "address": "0xaDAb76dD2dcA7aE080A796F0ce86170e482AfB4a",
+        "url": "https://dexscreener.com/optimism/0xadab76dd2dca7ae080a796f0ce86170e482afb4a",
+        "role": "sell_high_pool"
+      },
+      "mid_out": null,
+      "final_out": null,
+      "premium": 0.35193559999999996,
+      "gross_profit_token": 1.595625,
+      "gas_usd": 0.001,
+      "net_profit_usd": 1.24269,
+      "spread_bps": 22.67,
+      "low_price_usd": 63031.38,
+      "high_price_usd": 63174.29,
+      "liquidity_usd_low_pool": 35193.56,
+      "liquidity_usd_high_pool": 325276.57,
+      "volume_24h_usd_low_pool": 96173.6,
+      "volume_24h_usd_high_pool": 39017.67,
+      "simulation_ok": false,
+      "simulation_message": "Market-data research signal only; requires route quote and eth_call simulation before execution.",
+      "research_source": "dexscreener token-pairs"
+    }
+  ],
+  "errors": [],
+  "thresholds": {
+    "min_liquidity_usd": 25000,
+    "min_volume_24h_usd": 10000,
+    "min_spread_bps": 20,
+    "trade_size_usd": 10000
+  }
+}

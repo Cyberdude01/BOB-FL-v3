@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-06-02T10:59:33.709568+00:00",
+  "wallet": "0xc18EdE537AE7fD823d7A20942E11DfB067D47694",
+  "eth_price_usd": 1980.64,
+  "networks": {
+    "arbitrum": {
+      "block_number": 469250847,
+      "gas_price_gwei": 0.0201,
+      "base_fee_gwei": 0.0201,
+      "wallet_balance_eth": 0.015219243578055817,
+      "wallet_balance_usd": 30.1438,
+      "transaction_count": 0,
+      "fee_history": {
+        "min_gwei": 0.02,
+        "avg_gwei": 0.02,
+        "max_gwei": 0.0201
+      },
+      "strategy_cost": {
+        "gas_limit": 500000,
+        "gas_price_gwei": 0.0201,
+        "gas_cost_eth": 1.007e-05,
+        "gas_cost_usd": 0.0199
+      }
+    },
+    "base": {
+      "block_number": 46804313,
+      "gas_price_gwei": 0.006,
+      "base_fee_gwei": 0.005,
+      "wallet_balance_eth": 0.015848750987186737,
+      "wallet_balance_usd": 31.3907,
+      "transaction_count": 0,
+      "fee_history": {
+        "min_gwei": 0.005,
+        "avg_gwei": 0.005,
+        "max_gwei": 0.005
+      },
+      "strategy_cost": {
+        "gas_limit": 400000,
+        "gas_price_gwei": 0.006,
+        "gas_cost_eth": 2.4e-06,
+        "gas_cost_usd": 0.0048
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "uniswap_v4": {
+    "mainnet_pool_manager": "0x000000000004444c5dc75cB358380D2e3dE08A90",
+    "mainnet_universal_router": "0x66a9893cc07d91d95644aedd05d03f95e1dba8af",
+    "supported_chains": [
+      "ethereum",
+      "arbitrum",
+      "base",
+      "polygon",
+      "optimism"
+    ],
+    "hook_fee_flags": {
+      "dynamic_fee": 8388608,
+      "twamm": 8388609,
+      "limit_order": 8388610
+    }
+  },
+  "l2_dominant_dex": {
+    "base": {
+      "name": "Aero",
+      "router": "0x420DD381b31aEf6683db6B902084cB0FFECe40Da",
+      "fee_model": "voting_fees"
+    },
+    "optimism": {
+      "name": "Aero",
+      "router": "0x420DD381b31aEf6683db6B902084cB0FFECe40Da",
+      "fee_model": "voting_fees"
+    },
+    "arbitrum": {
+      "name": "Camelot",
+      "router": "0x0000000000000000000000000000000000000000",
+      "fee_model": "trading_fees"
+    }
+  },
+  "erc4626_vaults": {
+    "strategies": [
+      "meta_vault",
+      "twamm_vault",
+      "cross_chain_vault",
+      "protected_yield_vault"
+    ]
+  }
+}

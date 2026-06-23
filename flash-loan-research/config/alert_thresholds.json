@@ -1,0 +1,39 @@
+{
+  "opportunity_thresholds": {
+    "arbitrage": {
+      "min_profit_usd": 500,
+      "min_profit_percentage": 0.5,
+      "max_gas_cost_usd": 100,
+      "min_liquidity_usd": 10000
+    },
+    "stablecoin_arbitrage": {
+      "min_profit_usd": 100,
+      "min_profit_percentage": 0.1,
+      "max_slippage_percentage": 0.5,
+      "min_pool_depth_usd": 50000
+    },
+    "cross_chain": {
+      "min_profit_usd": 1000,
+      "min_profit_percentage": 1.0,
+      "max_bridge_fee_usd": 200,
+      "min_transfer_amount_usd": 20000
+    }
+  },
+  "risk_parameters": {
+    "max_borrow_amount_usd": 1000000,
+    "max_gas_price_gwei": 100,
+    "emergency_stop_loss_percentage": 10,
+    "concurrent_opportunities": 3
+  },
+  "monitoring_frequency": {
+    "price_checks": "30s",
+    "pool_updates": "60s",
+    "arbitrage_analysis": "120s",
+    "report_generation": "24h"
+  },
+  "exclusions": {
+    "tokens_to_avoid": ["SHIB", "DOGE", "PEPE"],
+    "risky_protocols": ["unknown_protocol_1", "unknown_protocol_2"],
+    "low_liquidity_threshold_usd": 5000
+  }
+}

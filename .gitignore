@@ -1,0 +1,59 @@
+# Secrets and local config
+.env
+.env.*
+*.env
+api-keys-config.json
+*secret*
+*Secret*
+*private*key*
+*PRIVATE*KEY*
+*wallet*.json
+*keystore*
+*.pem
+*.key
+id_ed25519*
+id_rsa*
+
+# Dependencies / generated
+node_modules/
+venv/
+venv_*/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Logs / runtime / databases
+*.log
+logs/
+*.db
+*.sqlite
+*.sqlite3
+*.jsonl
+data/execution-handoff/
+data/opportunity-register/
+data/raw/
+data/processed/
+data/replica/
+data/live-executions/
+data/gas-history/
+data/*reports*/
+
+# Build artifacts
+live-flashloan/out/
+live-flashloan/cache/
+live-flashloan/broadcast/
+live-flashloan/lib/
+out/
+cache/
+broadcast/
+
+# Archives/backups/large local files
+*.tar
+*.tar.gz
+*.zip
+*.bak*
+*backup*
+*snapshot*
+.DS_Store

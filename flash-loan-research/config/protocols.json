@@ -1,0 +1,74 @@
+{
+  "flash_loan_providers": {
+    "aave": {
+      "name": "Aave",
+      "chains": ["ethereum", "polygon", "avalanche", "bsc"],
+      "endpoints": {
+        "ethereum": "https://aave.etherscan.io",
+        "polygon": "https://aave-polygon.etherscan.io",
+        "avalanche": "https://aave-avalanche.etherscan.io",
+        "bsc": "https://aave-bsc.etherscan.io"
+      },
+      "pools": {
+        "stablecoins": ["USDC", "DAI", "USDT", "FRAX"],
+        "volatile": ["WETH", "WBTC", "LINK", "UNI"]
+      }
+    },
+    "dydx": {
+      "name": "dYdX",
+      "chains": ["ethereum"],
+      "endpoints": {
+        "ethereum": "https://api.dydx.exchange"
+      },
+      "features": ["perpetual_swaps", "spot_trading"]
+    },
+    "maker": {
+      "name": "MakerDAO",
+      "chains": ["ethereum"],
+      "endpoints": {
+        "ethereum": "https://makerdao.com"
+      },
+      "special_features": ["dai_flash_loans", "cdp_management"]
+    }
+  },
+  "dex_protocols": {
+    "uniswap": {
+      "name": "Uniswap",
+      "versions": ["v2", "v3", "v4"],
+      "chains": ["ethereum", "polygon", "avalanche", "bsc"],
+      "endpoints": {
+        "v2": "https://api.uniswap.org/v2",
+        "v3": "https://api.uniswap.org/v3",
+        "v4": "https://api.uniswap.org/v4"
+      }
+    },
+    "sushiswap": {
+      "name": "SushiSwap",
+      "versions": ["v2", "mos"],
+      "chains": ["ethereum", "polygon", "avalanche", "bsc"],
+      "endpoints": {
+        "v2": "https://api.sushiswap.org/v2",
+        "mos": "https://api.sushiswap.org/mos"
+      }
+    },
+    "balancer": {
+      "name": "Balancer",
+      "versions": ["v2", "v3"],
+      "chains": ["ethereum", "polygon"],
+      "endpoints": {
+        "v2": "https://api.balancer.fi/v2",
+        "v3": "https://api.balancer.fi/v3"
+      }
+    }
+  },
+  "bridges": {
+    "ethereum_polygon": {
+      "name": "Ethereum ↔ Polygon",
+      "protocols": ["polygon_bridge", "arbitrum_bridge", "optimism_bridge"]
+    },
+    "ethereum_avalanche": {
+      "name": "Ethereum ↔ Avalanche",
+      "protocols": ["avax_bridge", "avalanche_bridge"]
+    }
+  }
+}

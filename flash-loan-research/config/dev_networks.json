@@ -1,0 +1,71 @@
+{
+  "mode": "development",
+  "execution_enabled": false,
+  "real_transactions_enabled": false,
+  "requires_manual_approval_for_real_tx": true,
+  "active_networks": ["arbitrum", "base"],
+  "deferred_networks": ["ethereum", "optimism", "cross_chain"],
+  "rpc_provider_priority": ["public", "infura", "alchemy", "quicknode"],
+  "networks": {
+    "arbitrum": {
+      "name": "Arbitrum One",
+      "chain_id": 42161,
+      "currency": "ETH",
+      "explorer": "https://arbiscan.io",
+      "public_rpc": "https://arb1.arbitrum.io/rpc",
+      "rpc_env": "ARBITRUM_RPC",
+      "infura_env": "INFURA_ARBITRUM_RPC",
+      "alchemy_env": "ALCHEMY_ARBITRUM_RPC",
+      "quicknode_env": "QUICKNODE_ARBITRUM_RPC",
+      "gas_strategy": {
+        "max_fee_gwei_dev": 20,
+        "priority_fee_gwei_dev": 2,
+        "gas_spike_multiplier_alert": 2.0
+      }
+    },
+    "base": {
+      "name": "Base",
+      "chain_id": 8453,
+      "currency": "ETH",
+      "explorer": "https://basescan.org",
+      "public_rpc": "https://mainnet.base.org",
+      "rpc_env": "BASE_RPC",
+      "infura_env": "INFURA_BASE_RPC",
+      "alchemy_env": "ALCHEMY_BASE_RPC",
+      "quicknode_env": "QUICKNODE_BASE_RPC",
+      "gas_strategy": {
+        "max_fee_gwei_dev": 15,
+        "priority_fee_gwei_dev": 1,
+        "gas_spike_multiplier_alert": 2.0
+      }
+    },
+    "ethereum": {
+      "name": "Ethereum Mainnet",
+      "chain_id": 1,
+      "currency": "ETH",
+      "explorer": "https://etherscan.io",
+      "public_rpc": "",
+      "rpc_env": "ETHEREUM_RPC",
+      "status": "deferred_until_arbitrum_base_validated"
+    },
+    "optimism": {
+      "name": "Optimism",
+      "chain_id": 10,
+      "currency": "ETH",
+      "explorer": "https://optimistic.etherscan.io",
+      "public_rpc": "https://mainnet.optimism.io",
+      "rpc_env": "OPTIMISM_RPC",
+      "status": "deferred_until_arbitrum_base_validated"
+    }
+  },
+  "mev": {
+    "primary": "flashbots",
+    "eden": "deferred",
+    "flashbots": {
+      "note": "Flashbots does not use a normal API-key-first model. Use relay/RPC endpoints and signed requests where required.",
+      "ethereum_relay": "https://relay.flashbots.net",
+      "protect_rpc": "https://rpc.flashbots.net",
+      "auth_signer_env": "FLASHBOTS_AUTH_PRIVATE_KEY_OPTIONAL"
+    }
+  }
+}

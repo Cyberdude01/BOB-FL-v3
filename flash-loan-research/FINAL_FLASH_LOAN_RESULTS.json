@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-06-06T09:52:45.375903",
+  "initial_balance": {
+    "arbitrum_eth": 0.015190440893331818,
+    "base_eth": 0.015848750987186737,
+    "total_eth": 0.031039191880518555
+  },
+  "final_balance": {
+    "arbitrum_eth": 0.015190440893331818,
+    "base_eth": 0.015848750987186737,
+    "total_eth": 0.031039191880518555
+  },
+  "total_profit_eth": 0.0,
+  "total_profit_usd": 0.0,
+  "arbitrum_result": {
+    "success": false,
+    "result": {
+      "success": false,
+      "error": "{'code': -32000, 'message': 'gas required exceeds allowance (0)'}"
+    },
+    "execution_time": 0.4012908935546875,
+    "opportunity_id": "final_flash_loan_arbitrum_1780764676",
+    "network": "arbitrum",
+    "balance_before": 0.031039191880518555,
+    "balance_after": 0.031039191880518555,
+    "balance_diff": 0.0,
+    "profit_usd": 0.0
+  },
+  "base_result": {
+    "id": "base_exec_1780764742",
+    "opportunity_id": "final_flash_loan_base_1780764742",
+    "timestamp": "2026-06-06T09:52:24.682028",
+    "success": false,
+    "profit_usd": 0.0,
+    "gas_cost_usd": 756000.0,
+    "confidence_score": 0.9408058813163634,
+    "execution_time": 1.891209602355957,
+    "network": "base",
+    "protocol": "uniswap",
+    "token_pair": "USDC-USDT",
+    "balance_before": 0.031039191880518555,
+    "balance_after": 0.031039191880518555,
+    "balance_diff": 0.0
+  },
+  "successful_transactions": 0,
+  "fixes_applied": {
+    "gas_allowance": "Increased to 2,500,000 (Arbitrum)",
+    "database_schema": "Added timestamp column",
+    "random_module": "Added to Base engine",
+    "profit_thresholds": "Reduced to $5 minimum",
+    "dynamic_pricing": "Implemented real-time gas pricing"
+  },
+  "execution_status": "COMPLETED",
+  "networks_tested": [
+    "arbitrum",
+    "base"
+  ],
+  "opportunity_types": [
+    "flash_loan",
+    "flash_loan"
+  ]
+}
